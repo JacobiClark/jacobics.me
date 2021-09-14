@@ -8,7 +8,7 @@ import ProjectCard from "./ProjectCard";
 const Skills = () => {
   return (
     <Box>
-      <Text>laskjdf</Text>
+      <Text>laskjdf22</Text>
     </Box>
   );
 };
