@@ -31,10 +31,13 @@ export default function Home() {
       <Text fontSize="2xl" mt="1%">
         Please feel free to check out some of the cool projects I have built.{" "}
       </Text>
-      <Center>
-        <Text fontSize="4xl">Projects</Text>
+      <Center mt="30px">
+        <Text fontSize="4xl">Skills</Text>
       </Center>
       <Skills />
+      <Center mt="30px">
+        <Text fontSize="4xl">Projects</Text>
+      </Center>
       <Projects />
     </SlideFade>
   );

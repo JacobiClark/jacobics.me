@@ -15,6 +15,7 @@ import {
   SiGit,
   SiVisualstudiocode,
   SiNodeDotJs,
+  SiGithub,
 } from "react-icons/si";
 import ProjectCard from "./ProjectCard";
 
@@ -33,25 +34,28 @@ const techSkills = [
     ],
   },
   {
-    techType: "Languages",
+    techType: "Libraries/ Frameworks",
     technologies: [
       { icon: <SiReact />, techName: "React" },
       { icon: <SiNextDotJs />, techName: "Next.js" },
       { icon: "", techName: "Chakra-UI" },
       { icon: "", techName: "Sanity.CMS" },
-      { icon: "", techName: "GROQ" },
-      { icon: <SiReact />, techName: "React" },
-      { icon: <SiNextDotJs />, techName: "Next.js" },
-      { icon: "", techName: "Chakra-UI" },
-      { icon: "", techName: "Sanity.CMS" },
-      { icon: "", techName: "GROQ" },
+    ],
+  },
+  {
+    techType: "Tools/Utilities:",
+    technologies: [
+      { icon: <SiHtml5 />, techName: "HTML5" },
+      { icon: <SiCss3 />, techName: "CSS3" },
+      { icon: <SiGithub />, techName: "GitHub" },
+      { icon: <SiVisualstudiocode />, techName: "VSCode" },
     ],
   },
 ];
 
 const Skills = () => {
   return (
-    <Box border="2px" borderColor="gray.200" borderRadius="md">
+    <Box border="2px" borderColor="gray.200" borderRadius="md" mt="7px">
       {techSkills.map((skillType) => {
         return (
           <Flex
@@ -62,11 +66,14 @@ const Skills = () => {
             borderRadius="md"
             m="1%"
           >
-            <Flex align="center" m="1%">
-              <Text fontSize="xl" m="2%">
-                {skillType.techType}:
-              </Text>
-              <Flex wrap="wrap" mb="8px">
+            <Flex align="center">
+              <Box w="140px" flexShrink="0" align="center">
+                <Text fontSize="xl">
+                  {skillType.techType}
+                  {":"}
+                </Text>
+              </Box>
+              <Flex wrap="wrap" mb="8px" ml="10px">
                 {skillType.technologies.map((technology) => {
                   return (
                     <Flex
@@ -84,7 +91,7 @@ const Skills = () => {
                   );
                 })}
               </Flex>
-            </Flex>{" "}
+            </Flex>
           </Flex>
         );
       })}

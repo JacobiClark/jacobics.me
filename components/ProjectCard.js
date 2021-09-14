@@ -6,7 +6,7 @@ import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 const ProjectCard = (props) => {
   console.log(props);
   return (
-    <Flex wrap="wrap" mt="2%">
+    <Flex wrap="wrap" mt="7px">
       <Flex
         wrap="wrap"
         border="2px"
