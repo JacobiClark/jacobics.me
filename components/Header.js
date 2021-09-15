@@ -17,6 +17,7 @@ import {
 import { CloseIcon, HamburgerIcon } from "@chakra-ui/icons";
 import Link from "next/link";
 import NextLink from "next/link";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 const Links = [
   {
@@ -52,6 +53,22 @@ const Header = (props) => {
             <Text fontSize="2xl">{"{JC}"}</Text>
           </a>
         </Link>
+        <Flex align="center" justify="center">
+          <Box mr="8px" ml="8px">
+            <Link href="https://github.com/JacobiClark">
+              <a>
+                <FaGithub size={35} />
+              </a>
+            </Link>
+          </Box>
+          <Box mr="8px" ml="8px">
+            <Link href="https://www.linkedin.com/in/jacob-clarksd/">
+              <a>
+                <FaLinkedin size={35} />
+              </a>
+            </Link>
+          </Box>
+        </Flex>
         <Box>
           {/*<IconButton
             onClick={onOpen}
