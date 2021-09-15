@@ -4,7 +4,6 @@ import Link from "next/link";
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 
 const ProjectCard = (props) => {
-  console.log(props);
   return (
     <Flex wrap="wrap" mt="7px">
       <Flex
@@ -24,7 +23,7 @@ const ProjectCard = (props) => {
         ></Image>
         <Box flex="1" p="2%">
           <Center h="20px">
-            <Link href="/">
+            <Link href={props.links.external}>
               <a>
                 <Text fontSize="2xl" color="teal.500">
                   {props.title}
@@ -37,7 +36,6 @@ const ProjectCard = (props) => {
           </Text>
           <Flex wrap="wrap">
             {props.technologies.map((technology) => {
-              console.log(technology);
               return (
                 <Flex
                   bg="rgb(44,49,61)"

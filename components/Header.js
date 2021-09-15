@@ -5,6 +5,7 @@ import {
   Text,
   Button,
   HStack,
+  Center,
   IconButton,
   Drawer,
   DrawerOverlay,
@@ -15,6 +16,22 @@ import {
 } from "@chakra-ui/react";
 import { CloseIcon, HamburgerIcon } from "@chakra-ui/icons";
 import Link from "next/link";
+import NextLink from "next/link";
+
+const Links = [
+  {
+    name: "Home",
+    route: "/",
+  },
+  {
+    name: "About Me",
+    route: "/about",
+  },
+  {
+    name: "Resume",
+    route: "/bookmarks",
+  },
+];
 
 const Header = (props) => {
   const [show, setShow] = useState(false);
@@ -22,11 +39,21 @@ const Header = (props) => {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   return (
-    <>
-      <Flex p="2" alignItems="center" justifyContent="space-between">
-        <Text fontSize="large">Jacob Clark</Text>
+    <Center>
+      <Flex
+        p="2"
+        alignItems="center"
+        justifyContent="space-between"
+        w="100%"
+        maxW="7xl"
+      >
+        <Link href="/">
+          <a>
+            <Text fontSize="2xl">{"{JC}"}</Text>
+          </a>
+        </Link>
         <Box>
-          <IconButton
+          {/*<IconButton
             onClick={onOpen}
             icon={isOpen ? <CloseIcon /> : <HamburgerIcon w="8" h="8" />}
             display={["flex", "none"]}
@@ -43,23 +70,15 @@ const Header = (props) => {
                 <p>Some contents...</p>
               </DrawerBody>
             </DrawerContent>
-          </Drawer>
-          <HStack display={["none", "flex"]}>
-            <Link href="/">
-              <a>
-                <Box bg="#B7C2DA" p="7px" borderRadius="md">
-                  <Text color="black" fontWeight="medium">
-                    Home
-                  </Text>
-                </Box>
-              </a>
-            </Link>
-            <Button colorScheme="facebook">About Me</Button>
-            <Button colorScheme="facebook">Resume</Button>
+          </Drawer>*/}
+          <HStack display={[/*"none", */ "flex"]}>
+            <a href="/Jacob_Clark_CS_Resume.PDF" target="_blank">
+              <Button colorScheme="facebook">Resume</Button>{" "}
+            </a>
           </HStack>
         </Box>
       </Flex>
-    </>
+    </Center>
   );
 };
 

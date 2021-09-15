@@ -21,6 +21,7 @@ export default function Home() {
         as="h1"
         fontSize={{ base: "28px", md: "40px", lg: "48px" }}
         mb={3}
+        mt="20px"
       >
         Hello, I&apos;m Jacob Clark.
       </Heading>
@@ -29,13 +30,19 @@ export default function Home() {
         React, Node, and JavaScript.{" "}
       </Text>
       <Text fontSize="2xl" mt="1%">
-        Please feel free to check out some of the cool projects I have built.{" "}
+        I&apos;m currently exploring opportunities to develop software in a
+        professional environment as well as building side-projects to increase
+        my software development skill-set.{" "}
       </Text>
-      <Center mt="30px">
+      <Text fontSize="2xl" mt="1%">
+        Please feel free to check out some of the technologies I have experience
+        with and projects I have built.{" "}
+      </Text>
+      <Center mt="50px">
         <Text fontSize="4xl">Skills</Text>
       </Center>
       <Skills />
-      <Center mt="30px">
+      <Center mt="50px">
         <Text fontSize="4xl">Projects</Text>
       </Center>
       <Projects />
