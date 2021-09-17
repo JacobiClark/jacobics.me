@@ -18,6 +18,7 @@ import { CloseIcon, HamburgerIcon } from "@chakra-ui/icons";
 import Link from "next/link";
 import NextLink from "next/link";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
+import Image from "next/image";
 
 const Links = [
   {
@@ -89,12 +90,16 @@ const Header = (props) => {
             </DrawerContent>
           </Drawer>*/}
           <HStack display={[/*"none", */ "flex"]}>
-            <a href="/Jacob_Clark_CS_Resume.PDF" target="_blank">
+            <a
+              href="./Jacob_Clark_CS_Resume.pdf"
+              target="_blank"
+              rel="noreferrer"
+            >
               <Button colorScheme="facebook">Resume</Button>{" "}
             </a>
           </HStack>
         </Box>
-      </Flex>
+      </Flex>{" "}
     </Center>
   );
 };
