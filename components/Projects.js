@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Flex, Image, Text, Box, Center } from "@chakra-ui/react";
 import Link from "next/link";
-import { SiReact, SiNextDotJs, SiTensorflow } from "react-icons/si";
+import { SiReact, SiNextdotjs, SiTensorflow } from "react-icons/si";
 import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
 import ProjectCard from "./ProjectCard";
 
@@ -12,7 +12,7 @@ const projectData = [
       "Real-time Stock analysis dashboard featuring live financial data and sentiment analysis on recent news articles pertaining to individual stocks",
     technologies: [
       { icon: <SiReact />, techName: "React" },
-      { icon: <SiNextDotJs />, techName: "Next.js" },
+      { icon: <SiNextdotjs />, techName: "Next.js" },
       { icon: <SiTensorflow />, techName: "Tensorflow.js" },
       { icon: "", techName: "Chakra-UI" },
       { icon: "", techName: "Yahoo Finance API" },
