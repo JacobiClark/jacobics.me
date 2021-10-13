@@ -9,7 +9,7 @@ import {
   SiPython,
   SiJava,
   SiReact,
-  SiNextDotJs,
+  SiNextdotjs,
   SiHtml5,
   SiCss3,
   SiGit,
@@ -37,7 +37,7 @@ const techSkills = [
     techType: "Libraries/ Frameworks",
     technologies: [
       { icon: <SiReact />, techName: "React" },
-      { icon: <SiNextDotJs />, techName: "Next.js" },
+      { icon: <SiNextdotjs />, techName: "Next.js" },
       { icon: "", techName: "Chakra-UI" },
       { icon: "", techName: "Sanity.CMS" },
     ],

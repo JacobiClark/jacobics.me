@@ -29,7 +29,7 @@ const projectData = [
       "Art Portfolio populated by images retrieved from a CMS back-end allowing the client to manage content using an online dashboard",
     technologies: [
       { icon: <SiReact />, techName: "React" },
-      { icon: <SiNextDotJs />, techName: "Next.js" },
+      { icon: <SiNextdotjs />, techName: "Next.js" },
       { icon: "", techName: "Chakra-UI" },
       { icon: "", techName: "Sanity.CMS" },
       { icon: "", techName: "GROQ" },
@@ -46,7 +46,7 @@ const projectData = [
       "Dashboard that allows users to directly search from a list of websites without having to route through a search engine.",
     technologies: [
       { icon: <SiReact />, techName: "React" },
-      { icon: <SiNextDotJs />, techName: "Next.js" },
+      { icon: <SiNextdotjs />, techName: "Next.js" },
     ],
     image: { src: "/quickTab.JPG", alt: "Quick-Tab" },
     links: {
