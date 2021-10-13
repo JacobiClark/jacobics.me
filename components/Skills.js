@@ -43,7 +43,7 @@ const techSkills = [
     ],
   },
   {
-    techType: "Tools/Utilities:",
+    techType: "Tools/Utilities",
     technologies: [
       { icon: <SiHtml5 />, techName: "HTML5" },
       { icon: <SiCss3 />, techName: "CSS3" },
@@ -66,7 +66,7 @@ const Skills = () => {
             borderRadius="md"
             m="1%"
           >
-            <Flex align="center">
+            <Flex align="center" direction={["column", "row"]}>
               <Box w="140px" flexShrink="0" align="center">
                 <Text fontSize="xl">
                   {skillType.techType}
