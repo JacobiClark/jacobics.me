@@ -14,7 +14,7 @@ import {
   SiCss3,
   SiGit,
   SiVisualstudiocode,
-  SiNodeDotJs,
+  SiNodedotjs,
   SiGithub,
 } from "react-icons/si";
 import ProjectCard from "./ProjectCard";
@@ -24,7 +24,7 @@ const techSkills = [
     techType: "Languages",
     technologies: [
       { icon: <SiJavascript />, techName: "JavaScript" },
-      { icon: <SiNodeDotJs />, techName: "Node.js" },
+      { icon: <SiNodedotjs />, techName: "Node.js" },
       { icon: "", techName: "SQL" },
       { icon: <SiMysql />, techName: "MySQL" },
       { icon: <SiPostgresql />, techName: "PostgresQL" },
