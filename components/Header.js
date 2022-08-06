@@ -90,11 +90,7 @@ const Header = (props) => {
             </DrawerContent>
           </Drawer>*/}
           <HStack display={[/*"none", */ "flex"]}>
-            <a
-              href="./Jacob_Clark_CS_Resume.pdf"
-              target="_blank"
-              rel="noreferrer"
-            >
+            <a href="./Jacob_Clark_Resume.pdf" target="_blank" rel="noreferrer">
               <Button colorScheme="facebook">Resume</Button>{" "}
             </a>
           </HStack>
